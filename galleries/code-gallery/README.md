@@ -1496,7 +1496,7 @@ server {
 ### Code block 12-02 - Linux Shell
 
 ```bash
-hugopublish="cd [LOCAL_SITE_FOLDER] && pwd && git pull && hugo build --destination public-prod --cleanDestinationDir && git add **/. && git commit -m \"Added recent build contents\" && ssh [HOST_NAME] \"echo \"Updating mkennedy.codes\" && cd [SERVER_SITE_FOLDER]/prod && git pull"
+alias hugopublish='cd [LOCAL_SITE_FOLDER] && pwd && git pull && hugo build --destination public-prod --cleanDestinationDir && git add -A && git commit -m "Added recent build contents" && ssh [HOST_NAME] "echo \"Updating mkennedy.codes\" && cd [SERVER_SITE_FOLDER]/prod && git pull"'
 ```
 
 ### Code block 12-03 - NGINX

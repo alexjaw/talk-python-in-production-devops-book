@@ -8,6 +8,10 @@ and this project uses [~ Calendar Versioning](https://calver.org/) with the form
 
 ## [Unreleased]
 
+### Fixed
+- Fixed bug in `hugopublish` shell alias for static site deployment
+- Files: `assets/docs/files-per-chapter/13-static-sites-and-hugo.md`
+
 
 ## [2025.12.03] - 2025-12-03
 
