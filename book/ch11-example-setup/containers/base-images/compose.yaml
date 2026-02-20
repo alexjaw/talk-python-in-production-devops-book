@@ -8,6 +8,9 @@ services:
       - linux-example-base
 
   linux-example-base:
-    build: ./linuxbase
+    build:
+      context: ./linuxbase
+      args:
+        TZ: ${TZ:-UTC}
     container_name: linux-example-base
     image: linux-example-base

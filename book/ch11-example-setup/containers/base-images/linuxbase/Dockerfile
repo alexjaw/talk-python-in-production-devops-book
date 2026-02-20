@@ -1,9 +1,11 @@
 FROM ubuntu:latest
 
+ARG TZ=UTC
+ENV TZ=${TZ}
+
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
-ENV TZ="America/Los_Angeles"
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
